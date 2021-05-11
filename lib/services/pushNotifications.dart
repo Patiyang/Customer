@@ -26,7 +26,7 @@ class OneSignalPush {
               "data": {"foo": "bar"},
               "contents": {"en": message},
               "headings": {"en": heading},
-              "android_sound": "newOrder.mp3",
+              "android_sound": "neworder.mp3",
               "android_channel_id":channelId
             },
           ));
