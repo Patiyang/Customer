@@ -40,7 +40,8 @@ class _HomePagePrimaryState extends State<HomePagePrimary> {
         alignment: Alignment.center,
         children: [
           Container(
-            decoration: BoxDecoration(                color: Color(0xff2581c8),
+            decoration: BoxDecoration(
+              color: Color(0xff2581c8),
 
               // gradient: LinearGradient(
               //   begin: Alignment.bottomLeft,
@@ -48,8 +49,6 @@ class _HomePagePrimaryState extends State<HomePagePrimary> {
               //   colors: [blue.withOpacity(.7),darkBLue],
               // ),
             ),
-
-            
             alignment: Alignment.topCenter,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -131,41 +130,25 @@ class _HomePagePrimaryState extends State<HomePagePrimary> {
                     ),
                     children: serviceImages
                         .map((e) => Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 1.0, horizontal: 4),
-                              child: GestureDetector(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: InkWell(
                                 onTap: e.callback,
-                                child: Card(color: lighterBLue,
-                                  // padding: EdgeInsets.all(12),
+                                child: Card(
+                                  color: lighterBLue,
                                   elevation: 4,
-                                  // decoration: BoxDecoration(
-                                  //   borderRadius: BorderRadius.all(Radius.circular(9)),
-                                  //   color: lighterBLue,
-                                  //   // gradient: LinearGradient(
-                                  //   //   begin: Alignment.bottomCenter,
-                                  //   //   end: Alignment.topCenter,
-                                  //   //   colors: [grey.withOpacity(.4), darkBLue.withOpacity(.2)],
-                                  //   // ),
-                                  // ),
-
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(9))),
-                                  // decoration: BoxDecoration(
-                                  //   color: Colors.white,
-                                  //   boxShadow: [
-                                  //     BoxShadow(color: Colors.grey[100], blurRadius: 2, spreadRadius: 1, offset: Offset(2, 3)),
-                                  //   ],
-                                  //   borderRadius: BorderRadius.all(Radius.circular(9)),
-                                  // ),
                                   child: Column(
                                     children: [
                                       Image.asset(
                                         e.image,
                                         color: white,
-                                        // height: 100,
-                                        // width: 100,
                                       ),
                                       FittedBox(
-                                        fit: BoxFit.scaleDown,
-                                        child: CustomText(text: e.serviceName, color: white,)),
+                                          fit: BoxFit.contain,
+                                          child: CustomText(
+                                            text: e.serviceName,
+                                            color: white,
+                                          )),
                                     ],
                                   ),
                                 ),
@@ -174,7 +157,6 @@ class _HomePagePrimaryState extends State<HomePagePrimary> {
                         .toList(),
                   ),
                 ),
-                // SizedBox(height: 80),
               ],
             ),
           ),

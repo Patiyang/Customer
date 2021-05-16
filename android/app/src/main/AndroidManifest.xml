@@ -17,6 +17,9 @@
         
         <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="@string/maps_api_key"/>
+        <meta-data
+              android:name="com.onesignal.messaging.default_notification_icon"
+              android:resource="@drawable/ic_stat_onesignal_default"/>
     
         <activity
             android:name=".MainActivity"

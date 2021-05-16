@@ -202,7 +202,7 @@ class _SignUpState extends State<SignUp> {
                       obscure: obscurePass,
                       iconOne: SizedBox(),
                       iconTwo: GestureDetector(
-                        child: Icon(obscurePass == true ? Icons.visibility : Icons.visibility_off),
+                        child: Icon(obscurePass == true ? Icons.visibility_off : Icons.visibility_off),
                         onTap: () {
                           setState(() {
                             obscurePass = !obscurePass;
@@ -226,7 +226,7 @@ class _SignUpState extends State<SignUp> {
                     obscure: obscureConfirmPass,
                     iconOne: SizedBox(),
                     iconTwo: GestureDetector(
-                      child: Icon(obscureConfirmPass == true ? Icons.visibility : Icons.visibility_off),
+                      child: Icon(obscureConfirmPass == true ? Icons.visibility_off : Icons.visibility_off),
                       onTap: () {
                         setState(() {
                           obscureConfirmPass = !obscureConfirmPass;

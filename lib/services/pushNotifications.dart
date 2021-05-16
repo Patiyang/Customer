@@ -27,7 +27,8 @@ class OneSignalPush {
               "contents": {"en": message},
               "headings": {"en": heading},
               "android_sound": "neworder.mp3",
-              "android_channel_id":channelId
+              "android_channel_id":channelId,
+              "small_icon":"ic_stat_onesignal_default.png"
             },
           ));
       final Map result = json.decode(response.body);

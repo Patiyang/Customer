@@ -16,10 +16,10 @@ const green = Colors.green;
 const googleKey = 'AIzaSyADOnetDD3Rz5sEVeZoawAAkvF0Pw6rk5c';
 const backendUrl = 'https://forsanway.herokuapp.com';
 const publicKey = 'pk_test_dca4d980fb89dab43745690f65abe24203af7680';
-const oneSignalAppId = 'a871a72d-d389-4c04-a52d-40ed65b89e0f';
-const channelId = '84e8d465-e169-4165-ac67-46ae52a7af99';
+const oneSignalAppId = 'f4380f75-f8d2-4cec-9c95-dded133cc259';
+const channelId = '782b3de9-454e-452e-bbe3-fda7ba188b1b';
 const oneSignalPostUrl = 'https://onesignal.com/api/v1/notifications';
-const oneSignalRestApiKey = 'MDY3ZDQxNTEtNTM2ZC00ZGQ2LThlNzQtZWE2NWNmYmZiNmVi';
+const oneSignalRestApiKey = 'MmZiNDA0OGUtZTlkMy00ZDFkLTliZTctOWQ3MGZhZmE0OGFh';
 
 AllTextData allTextData;
 Locale locale;
